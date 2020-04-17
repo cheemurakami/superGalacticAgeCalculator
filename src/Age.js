@@ -1,5 +1,5 @@
 export class Age {
-  constructor(age, expectancy, yearsLeft) {
+  constructor(age, expectancy) {
     this.age = parseInt(age);
     this.expectancy = parseInt(expectancy);
     this.yearsLeft = 0;
