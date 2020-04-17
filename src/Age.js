@@ -71,9 +71,14 @@ export class Age {
   jupiterExpectancy() {
     return this.jupiterYears(this.expectancy);
   }
-  yearsLeftInJupiter() {
-    this.yearsLeft = this.jupiterExpectancy() - this.jupiterAge();
-    return this.yearsLeft;
+  yearsExpectedOrPastInJupiter(age, expectancy) {
+    if (age <= expectancy) {
+      this.yearsLeft = this.jupiterExpectancy() - this.jupiterAge();
+      return Math.abs(this.yearsLeft);
+    } else {
+      this.yearsLeft = this.jupiterAge() - this.jupiterExpectancy();
+      return Math.abs(this.yearsLeft);
+    }
   }
 
 }

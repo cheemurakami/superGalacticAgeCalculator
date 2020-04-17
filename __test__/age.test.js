@@ -30,10 +30,10 @@ describe("Age", () => {
   })
 
   test('should convert earth age and expectancy to jupiter years', () => {
-    const age = new Age("20", "80");
-    expect(age.jupiterAge(20)).toEqual(2);
-    expect(age.jupiterExpectancy(80)).toEqual(7);
-    expect(age.yearsLeftInJupiter()).toEqual(5);
+    const age = new Age("80", "20");
+    expect(age.jupiterAge(80)).toEqual(7);
+    expect(age.jupiterExpectancy(80)).toEqual(2);
+    expect(age.yearsExpectedOrPastInJupiter()).toEqual(5);
   })
 
 
