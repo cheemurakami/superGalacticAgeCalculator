@@ -1,34 +1,46 @@
 export class Age {
-  constructor(age, expectancy){
+  constructor(age, expectancy) {
     this.age = parseInt(age);
     this.expectancy = parseInt(expectancy);
   }
- 
+
   mercuryYears(earthYears) {
-    return Math.round((earthYears * .24) * 10) / 10;
+    return Math.round(earthYears / .24 * 10 / 10);
   }
-  mercuryAge(){
+  mercuryAge() {
     return this.mercuryYears(this.age);
   }
-  mercuryExpectancy(){
+  mercuryExpectancy() {
     return this.mercuryYears(this.expectancy);
   }
-  venusYears(earthYears){
-    return Math.round((earthYears * .62) * 10) / 10;
+
+  venusYears(earthYears) {
+    return Math.round(earthYears / .62 * 10 / 10);
   }
-  venusAge(){
+  venusAge() {
     return this.venusYears(this.age);
   }
-  venusExpectancy(){
+  venusExpectancy() {
     return this.venusYears(this.expectancy);
   }
-  marsYears(earthYears){
-    return Math.round((earthYears * 1.88) * 10) / 10;
+
+  marsYears(earthYears) {
+    return Math.round(earthYears / 1.88 * 10 / 10);
   }
-  marsAge(){
+  marsAge() {
     return this.marsYears(this.age);
   }
-  marsExpectancy(){
+  marsExpectancy() {
     return this.marsYears(this.expectancy);
+  }
+
+  jupiterYears(earthYears) {
+    return Math.round(earthYears / 11.86);
+  }
+  jupiterAge() {
+    return this.jupiterYears(this.age);
+  }
+  jupiterExpectancy() {
+    return this.jupiterYears(this.expectancy);
   }
 }
