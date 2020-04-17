@@ -10,7 +10,7 @@ describe("Age", () => {
 
   test('should convert earth age and expectancy to mercury years', () => {
     const age = new Age("90", "80");
-    expect(age.mercuryAge(30)).toEqual(375);
+    expect(age.mercuryAge(90)).toEqual(375);
     expect(age.mercuryExpectancy(80)).toEqual(333);
     expect(age.yearsExpectedOrPastInMercury()).toEqual(42);
   })

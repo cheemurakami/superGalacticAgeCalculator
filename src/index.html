@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Super Galactic Age Calculator</title>
 </head>
+
 <body>
   <div class="container">
     <div class="jumbotron">
       <h1 class="display-4">Super Galactic Age Calculator</h1>
-      <p class="lead">How old are you humans in other planets.....?</p>
+      <p class="lead">How old are you humans on the other planets.....?</p>
     </div>
     <form id="form">
       <div class="form-group">
-        <h3>How old are you now on Earth...?</h3>
+        <h3>How old are you now on the Earth...?</h3>
         <label for="age">Your Age: </label>
         <input id="current-age" type="number" min="0">
       </div>
       <div class="form-group">
-        <h3>Your life expectancy on Earth is...?</h3>
+        <h3>Your life expectancy on the Earth is...?</h3>
         <label for="life-expectancy">You want to live up to: </label>
         <input id="expected-age" type="number" min="0">
       </div>
@@ -30,9 +32,21 @@
       </div>
     </form>
     <div class="output">
-      <h3>Welcome to <span id="planet-name"></span></h3>
-      <p>You are <span id="planet-age"></span> years old in <span id="planet-name"></span>.
+      <h3>Welcome to <span class="planet-name"></span></h3>
+      <div class="message">
+        <p>You are <span class="planet-age"></span> years old in <span class="planet-name"></span>.
+      </div>
+      <div class="message">
+        <p>You possibly will be able to live <span class="planet-exp-age"></span> years more.
+          <div class="message">
+            If you have already
+            surpassed your life expectancy, stay healthy and live forever. You have lived <span
+              class="planet-exp-age"></span> years past the
+            life expectancy.</p>
+      </div>
     </div>
   </div>
+  </div>
 </body>
+
 </html>

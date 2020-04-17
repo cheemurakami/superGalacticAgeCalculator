@@ -7,22 +7,23 @@ https://cheemurakami.github.io/superGalacticAgeCalculator/
 #### By _**Chisato Murakami**_
 
 ## Description
-This is a simple website to to calculate users life expectancy in a different planet using the technologies I learned during my forth week at Epicodus.
+This is a simple website to calculate users life expectancy on a different planet using the technologies I learned during my fifth week at Epicodus.
 
 ## Project Specefications
 
 |  Behavior                 |  Input  | Output
 |---------------------------|---------|-------
 | **Spec 1: check if user input is number**| "20"| 20
-| **Spec 2: calculate users average life expectancy in Earth.sets == 80**(later)| 80 | 80
+| **Spec 2: calculate users average life expectancy in Earth.sets == 80**(later: UI logic?)| 80 | 80
 | **Spec 3: Returns their age in Mercury years. (A Mercury year is .24 Earth years.)** | 20 | 83
 | **Spec 4: Returns their age in Venus years. (A Venus year is .62 Earth years.)** | 20 | 32
 | **Spec 5: Returns their age in Mars years. (A Mars year is 1.88 Earth years.)** | 20 | 11
 | **Spec 6: Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)**| 20 | 43
 | **Spec 7: Determines how many years a user has left to live on each planet.**    |
+| **Spec 8: // UI logic // add user input boxes for current age and life expectancy and add click button for the answers for each planet**|
+|  |
+| **Spec 9: Each button leads to the output boxes and will show the message corresponding to the age of user input.**    |
 
-| **Spec 8: // UI logic //add button for proceed to check out and show payment input section**    |
-| **Spec 9: after users input their name, address, and payment option, press continue button so displays the summary of payment info**    |
 
 
 ## Setup/Installation Requirements
@@ -34,7 +35,7 @@ _{You can clone this program to your desktop or download the zip file on this pa
 ## Known Bugs
 
 _{Fixed JavaScript bug below:
-  Have to click continue button twice to show review your payment info box.}_
+  }_
 
 ## Support and contact details
 
