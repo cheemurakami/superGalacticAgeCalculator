@@ -1,7 +1,8 @@
 export class Age {
-  constructor(age, expectancy) {
+  constructor(age, expectancy, yearsLeft) {
     this.age = parseInt(age);
     this.expectancy = parseInt(expectancy);
+    this.yearsLeft = 0;
   }
 
   mercuryYears(earthYears) {
@@ -12,6 +13,10 @@ export class Age {
   }
   mercuryExpectancy() {
     return this.mercuryYears(this.expectancy);
+  }
+  yearsLeftInMercury(){
+    this.yearsLeft = this.mercuryExpectancy() - this.mercuryAge();
+    return this.yearsLeft;
   }
 
   venusYears(earthYears) {
@@ -43,4 +48,6 @@ export class Age {
   jupiterExpectancy() {
     return this.jupiterYears(this.expectancy);
   }
+
+
 }

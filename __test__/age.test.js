@@ -12,6 +12,7 @@ describe("Age", () => {
     const age = new Age("20", "80");
     expect(age.mercuryAge(20)).toEqual(83);
     expect(age.mercuryExpectancy(80)).toEqual(333);
+    expect(age.yearsLeftInMercury()).toEqual(250);
   })
 
   test('should convert earth age and expectancy to venus years', () => {
