@@ -14,9 +14,14 @@ export class Age {
   mercuryExpectancy() {
     return this.mercuryYears(this.expectancy);
   }
-  yearsLeftInMercury(){
-    this.yearsLeft = this.mercuryExpectancy() - this.mercuryAge();
-    return this.yearsLeft;
+  yearsExpectedInMercury(age, expectancy) {
+    if (age <= expectancy){
+      this.yearsLeft = this.mercuryExpectancy() - this.mercuryAge();
+      return Math.abs(this.yearsLeft);
+    } else {
+      this.yearsLeft = this.mercuryAge() - this.mercuryExpectancy();
+      return Math.abs(this.yearsLeft);
+      }
   }
 
   venusYears(earthYears) {
@@ -28,6 +33,10 @@ export class Age {
   venusExpectancy() {
     return this.venusYears(this.expectancy);
   }
+  yearsLeftInVenus() {
+    this.yearsLeft = this.venusExpectancy() - this.venusAge();
+    return this.yearsLeft;
+  }
 
   marsYears(earthYears) {
     return Math.round(earthYears / 1.88 * 10 / 10);
@@ -37,6 +46,10 @@ export class Age {
   }
   marsExpectancy() {
     return this.marsYears(this.expectancy);
+  }
+  yearsLeftInMars() {
+    this.yearsLeft = this.marsExpectancy() - this.marsAge();
+    return this.yearsLeft;
   }
 
   jupiterYears(earthYears) {
@@ -48,6 +61,9 @@ export class Age {
   jupiterExpectancy() {
     return this.jupiterYears(this.expectancy);
   }
-
+  yearsLeftInJupiter() {
+    this.yearsLeft = this.jupiterExpectancy() - this.jupiterAge();
+    return this.yearsLeft;
+  }
 
 }
