@@ -15,10 +15,10 @@ This is a simple website to to calculate users life expectancy in a different pl
 |---------------------------|---------|-------
 | **Spec 1: check if user input is number**| "20"| 20
 | **Spec 2: calculate users average life expectancy in Earth.sets == 80**(later)| 80 | 80
-| **Spec 3: Returns their age in Mercury years. (A Mercury year is .24 Earth years.)** | |
-| **Spec 4: Returns their age in Venus years. (A Venus year is .62 Earth years.)** | |
-| **Spec 5: Returns their age in Mars years. (A Mars year is 1.88 Earth years.)** | |
-| **Spec 6: Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)**  | |
+| **Spec 3: Returns their age in Mercury years. (A Mercury year is .24 Earth years.)** | 20 | 83
+| **Spec 4: Returns their age in Venus years. (A Venus year is .62 Earth years.)** | 20 | 32
+| **Spec 5: Returns their age in Mars years. (A Mars year is 1.88 Earth years.)** | 20 | 11
+| **Spec 6: Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)**| 20 | 43
 | **Spec 7: Determines how many years a user has left to live on each planet.**    |
 
 | **Spec 8: // UI logic //add button for proceed to check out and show payment input section**    |

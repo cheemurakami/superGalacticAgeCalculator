@@ -11,15 +11,15 @@ describe("Age", () => {
   test('should convert earth age and expectancy to mercury years', () => {
     const age = new Age("90", "80");
     expect(age.mercuryAge(30)).toEqual(375);
-    expect(age.mercuryExpectancy(20)).toEqual(333);
-    expect(age.yearsExpectedInMercury()).toEqual(42);
+    expect(age.mercuryExpectancy(80)).toEqual(333);
+    expect(age.yearsExpectedOrPastInMercury()).toEqual(42);
   })
 
   test('should convert earth age and expectancy to venus years', () => {
-    const age = new Age("20", "80");
-    expect(age.venusAge(20)).toEqual(32);
+    const age = new Age("90", "80");
+    expect(age.venusAge(90)).toEqual(145);
     expect(age.venusExpectancy(80)).toEqual(129);
-    expect(age.yearsLeftInVenus()).toEqual(97);
+    expect(age.yearsExpectedOrPastInVenus()).toEqual(16);
   })
 
   test('should convert earth age and expectancy to mars years', () => {

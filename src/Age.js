@@ -14,14 +14,14 @@ export class Age {
   mercuryExpectancy() {
     return this.mercuryYears(this.expectancy);
   }
-  yearsExpectedInMercury(age, expectancy) {
-    if (age <= expectancy){
+  yearsExpectedOrPastInMercury(age, expectancy) {
+    if (age <= expectancy) {
       this.yearsLeft = this.mercuryExpectancy() - this.mercuryAge();
       return Math.abs(this.yearsLeft);
     } else {
       this.yearsLeft = this.mercuryAge() - this.mercuryExpectancy();
       return Math.abs(this.yearsLeft);
-      }
+    }
   }
 
   venusYears(earthYears) {
@@ -33,9 +33,14 @@ export class Age {
   venusExpectancy() {
     return this.venusYears(this.expectancy);
   }
-  yearsLeftInVenus() {
-    this.yearsLeft = this.venusExpectancy() - this.venusAge();
-    return this.yearsLeft;
+  yearsExpectedOrPastInVenus(age, expectancy) {
+    if (age <= expectancy) {
+      this.yearsLeft = this.venusExpectancy() - this.venusAge();
+      return Math.abs(this.yearsLeft);
+    } else {
+      this.yearsLeft = this.venusAge() - this.venusExpectancy();
+      return Math.abs(this.yearsLeft);
+    }
   }
 
   marsYears(earthYears) {
