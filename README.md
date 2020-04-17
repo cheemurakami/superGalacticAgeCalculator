@@ -1,25 +1,26 @@
-# _Pizza Parlor_
+# _Super Gelactic Age Calculator_
 
-https://cheemurakami.github.io/pizza_parlor/
+https://cheemurakami.github.io/superGalacticAgeCalculator/
 
-#### JavaScript & jQuery Project for Epicodus, _04/10/2020_
+#### JavaScript & jQuery Project for Epicodus, _04/17/2020_
 
 #### By _**Chisato Murakami**_
 
 ## Description
-This is a simple website to to chose and order pizza using the technologies I learned during my forth week at Epicodus.
+This is a simple website to to calculate users life expectancy in a different planet using the technologies I learned during my forth week at Epicodus.
 
 ## Project Specefications
 
 |  Behavior                 |  Input  | Output
 |---------------------------|---------|-------
-| **Spec 1: selectboxes <- size(s, m, l), topping(cheese, pepperoni, tomato)**| |
-| **Spec 2: variables to store inputted data** | |
-| **Spec 3: Pizza constructor with properties for toppings and size** | |
-| **Spec 4: prototype method for the cost of pizza depending on the selections chosen** | |
-| **Spec 5: list the pizza the user order after user submit**  | |
-| **Spec 6: when clicks list, it displays the order summary and price**    |
-| **Spec 7: add button for proceed to check out and show payment input section**    |
+| **Spec 1: calculate users average life expectancy in Earth.sets == 80**| |
+| **Spec 2: Returns their age in Mercury years. (A Mercury year is .24 Earth years.)** | |
+| **Spec 3: Returns their age in Venus years. (A Venus year is .62 Earth years.)** | |
+| **Spec 4: Returns their age in Mars years. (A Mars year is 1.88 Earth years.)** | |
+| **Spec 5: Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)**  | |
+| **Spec 6: Determines how many years a user has left to live on each planet. **    |
+
+| **Spec 7: // UI logic //add button for proceed to check out and show payment input section**    |
 | **Spec 8: after users input their name, address, and payment option, press continue button so displays the summary of payment info**    |
 
 

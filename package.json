@@ -1,5 +1,5 @@
 {
-  "name": "super_galacticl_age_calculator", //change
+  "name": "super_galacticl_age_calculator",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -11,8 +11,8 @@
     "debug": "node --inspect node_modules/.bin/jest --runInBand"
   },
   "keywords": [],
-  "author": "Chisato Murakami", //chi 
-  "license": "MIT", 
+  "author": "Chisato Murakami",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
