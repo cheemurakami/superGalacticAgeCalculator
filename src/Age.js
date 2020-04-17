@@ -52,9 +52,14 @@ export class Age {
   marsExpectancy() {
     return this.marsYears(this.expectancy);
   }
-  yearsLeftInMars() {
-    this.yearsLeft = this.marsExpectancy() - this.marsAge();
-    return this.yearsLeft;
+  yearsExpectedOrPastInMars(age, expectancy) {
+    if (age <= expectancy) {
+      this.yearsLeft = this.marsExpectancy() - this.marsAge();
+      return Math.abs(this.yearsLeft);
+    } else {
+      this.yearsLeft = this.marsAge() - this.marsExpectancy();
+      return Math.abs(this.yearsLeft);
+    }
   }
 
   jupiterYears(earthYears) {

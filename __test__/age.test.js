@@ -23,10 +23,10 @@ describe("Age", () => {
   })
 
   test('should convert earth age and expectancy to mars years', () => {
-    const age = new Age("20", "80");
-    expect(age.marsAge(20)).toEqual(11);
-    expect(age.marsExpectancy(80)).toEqual(43);
-    expect(age.yearsLeftInMars()).toEqual(32);
+    const age = new Age("80", "20");
+    expect(age.marsAge(80)).toEqual(43);
+    expect(age.marsExpectancy(20)).toEqual(11);
+    expect(age.yearsExpectedOrPastInMars()).toEqual(32);
   })
 
   test('should convert earth age and expectancy to jupiter years', () => {
